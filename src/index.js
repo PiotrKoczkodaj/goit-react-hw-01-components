@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import { Profile } from 'components/Profil/Profil';
 import { Statistics } from 'components/Statistics/Statistics';
+import { FriendList } from 'components/FriendList/FriendList';
 import './index.css';
 import user from 'components/Profil/user.json';
 import data from 'components/Statistics/data.json';
+import friend from 'components/FriendList/friends.json';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -23,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       title="Upload stats"
       stats = {data}
     />
+    <FriendList friends={friend} />
      
   </React.StrictMode>
 );
