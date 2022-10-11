@@ -6,7 +6,8 @@ export const FriendList = ({ friends,children}) => {
     return (
         <>
             <ul className="friend-list">
-                <FriendListItem/>
+                <FriendListItem
+                    avatar={friends[0].avatar} />
             </ul>
         </>
     );
@@ -14,8 +15,12 @@ export const FriendList = ({ friends,children}) => {
 
 };
 
- export  const FriendListItem = ({friends}) => {
-
-console.log(friends)
-
+ export  const FriendListItem = ({friends,avatar,name,isOnline}) => {
+return(
+<li className="item">
+    <span className="status">{isOnline }</span>
+  <img className="avatar" src={avatar} alt="User avatar" width="48" />
+  <p className={name}></p>
+</li>
+)
 }
