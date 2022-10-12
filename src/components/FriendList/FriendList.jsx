@@ -6,14 +6,14 @@ export const FriendList = ({ friends,children}) => {
     const render = friends.map((friend) => {
         return (
             <>
-                <ul className="friend-list">
+                
                     <FriendListItem
                         avatar={friend.avatar}
                         name={friend.name}
                         id={friend.id}
                         isOnline={friend.isOnline } />
                         
-                </ul>
+                
             </>
         );
     });
