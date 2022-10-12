@@ -27,7 +27,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       stats = {data}
     />
     <FriendList friends={friend} />
-     <FriendListItem friends={friend} />
-  </React.StrictMode>
+    </React.StrictMode>
 );
 
