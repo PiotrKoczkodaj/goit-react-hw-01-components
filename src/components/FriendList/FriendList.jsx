@@ -6,27 +6,24 @@ export const FriendList = ({ friends,children}) => {
     const render = friends.map((friend) => {
         return (
             <>
-                
                     <FriendListItem
                         avatar={friend.avatar}
                         name={friend.name}
                         id={friend.id}
                         isOnline={friend.isOnline } />
-                        
-                
             </>
         );
     });
 
     return (
-        <ul className="friend-list">
+
+            <ul className="friend-list">
             {render}
-        </ul>);
-  
+            </ul>);
 };
 
 
- export  const FriendListItem = ({friends,avatar,name,isOnline,id}) => {
+export  const FriendListItem = ({friends,avatar,name,isOnline,id}) => {
 return(
 <li key={id} className="item">
     <span className="status">{isOnline }</span>
