@@ -1,6 +1,6 @@
 
 
-export const App = () => {
+export const App = ({children}) => {
   return (
     <div
       style={{
@@ -13,8 +13,9 @@ export const App = () => {
         padding: '50px 10px',
       }}
     >
-    React homework
+    {children}
     </div>
   );
 };
+
 
