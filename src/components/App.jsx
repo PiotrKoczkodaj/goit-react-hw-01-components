@@ -1,6 +1,6 @@
 
 
-export const App = ({children}) => {
+export const App = () => {
   return (
     <div
       style={{
@@ -13,12 +13,11 @@ export const App = ({children}) => {
         padding: '50px 10px',
       }}
     >
-      <>
-        {children}
-      </>
+    
     </div>
   );
 };
+
 
 
 
