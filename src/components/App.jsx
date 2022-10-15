@@ -13,9 +13,12 @@ export const App = ({children}) => {
         padding: '50px 10px',
       }}
     >
-    {children}
+      <>
+        {children}
+      </>
     </div>
   );
 };
+
 
 

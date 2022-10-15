@@ -15,9 +15,9 @@ export const TransactionHistory = ({items}) => (
             {
                 items.map(({id,type,amount,currency}) => (
                     <tr className={styles.row} key={id}>
-                    <td>{type }</td>
-                    <td>{amount }</td>
-                    <td>{currency }</td>
+                    <td className={styles.line}>{type }</td>
+                    <td className={styles.line}>{amount }</td>
+                    <td className={styles.line}>{currency }</td>
                      </tr>
                 ))
             }
